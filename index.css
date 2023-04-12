@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #027281;
+    color: #e6f7fc;
+}
+
+.container {
+    padding: 0 10px;
+}
+
+.title {
+    text-align: center;
+    margin: 20px;
+}
+
+label {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+input {
+    margin-bottom: 25px;
+}
+
+input[type="text"] {
+    padding: 5px 10px;
+    border-radius: 3px;
+    border: 1px solid black;
+}
+
+.box {
+    height: 70px;
+    width: 100%;
+    /* background-color: #e6f7fc; */
+    background-color: #002255;
+    margin-top: 5px;
+    margin-bottom: 25px;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+.toggle {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.toggle-text {
+    font-size: 18px;
+}
+
+.toggle-btn {
+    height: 30px;
+    width: 60px;
+    background-color: gray;
+    border-radius: 30px;
+    padding: 5px;
+    margin: 0 10px;
+}
+
+.inner-circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #e6f7fc;
+    transition: all 250ms;
+}
+
+.toggle-btn.toggled > .inner-circle {
+    transform: translateX(30px);
+    background-color: #333;
+}
+
+.unselected {
+    opacity: 0.5;
+}
